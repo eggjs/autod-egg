@@ -1,6 +1,7 @@
 'use strict';
 
-const PLUGIN_REG = /config\/plugin\.js$/;
+// config/plugin.js or confg/plugin.{env}.js
+const PLUGIN_REG = /config\/plugin(\.\w+)*\.js$/;
 
 module.exports = filepath => {
   const modules = [];
